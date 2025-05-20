@@ -46,4 +46,40 @@ portfolio{
             transform: scale(1.05);
         }
     }
+
+    &__nav {
+        float: left;
+        height: 100vh;
+        padding: 0rem 30rem 0rem 0rem;
+        background-color: red;
+        position: fixed;
+        &-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            li {
+                margin: 20px 0;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    padding: 10px 20px;
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        background: white;
+                        color: black;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+    }
 }
