@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna Kotapati | Portfolio</title>
 </head>
-
 <body>
-    <div class="root portfolio">
-        <nav class="portfolio__nav">
-            <h2>GK</h2>
-            <ul class="portfolio__nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="portfolio__container">
-            <div class="portfolio__about-me">
-                <h1>About Me</h1>
-                <p>Hi, I'm Krishna Kotapati, a passionate software developer with a love for creating innovative solutions.
-                    I have experience in various programming languages and frameworks, and I'm always eager to learn more.
-                </p>
-                <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and sharing my
-                    knowledge with others.</p>
+    <div class="page">
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand__initials">GK</span>
+                <span class="brand__name">GK</span>
             </div>
-            <div class="portfolio__projects">
-                <h1>Projects</h1>
+            <nav class="nav">
                 <ul>
-                    <li>
-                        <h2>Project 1</h2>
-                        <p>Description of Project 1.</p>
-                    </li>
-                    <li>
-                        <h2>Project 2</h2>
-                        <p>Description of Project 2.</p>
-                    </li>
-                    <li>
-                        <h2>Project 3</h2>
-                        <p>Description of Project 3.</p>
-                    </li>
+                    <li><a href="#home" class="nav__link is-active">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#experience" class="nav__link">Experience</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="sidebar__footer">
+                <a class="button" href="mailto:gopi.kotapati21@gmail.com">Email</a>
+                <a class="button button--ghost" href="#" aria-label="View resume">Resume</a>
             </div>
-        </div>
-        <footer class="portfolio__footer">
-            <h2>Contact Me</h2>
-            <p>If you would like to get in touch, please reach out via email at 
-                <a href="mailto:gopi.kotapati21@gmail.com">gopi.kotapati21@gmail.com</a>.
-            </p>
-            <p>&copy; 2025 Krishna Kotapati!!!</p>
-        </footer>
+        </aside>
+
+        <main class="content">
+            <section id="home" class="section hero">
+                <p class="eyebrow">Software Developer</p>
+                <h1>Building reliable, user-focused experiences.</h1>
+                <p class="lede">
+                    I design and ship web experiences with clean code, thoughtful UX, and measurable impact.
+                </p>
+                <div class="hero__actions">
+                    <a class="button" href="#projects">View projects</a>
+                    <a class="button button--ghost" href="#contact">Contact</a>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section__header">
+                    <p class="eyebrow">About</p>
+                    <h2>Who I am</h2>
+                </div>
+                <p>
+                    Hi, I'm Krishna Kotapati, a developer who loves turning ideas into products.
+                    I focus on modern web stacks, performance, and accessible design.
+                </p>
+                <div class="pill-list" id="skills"></div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section__header">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Recent work</h2>
+                </div>
+                <div class="card-grid" id="projects-grid"></div>
+            </section>
+
+            <section id="experience" class="section">
+                <div class="section__header">
+                    <p class="eyebrow">Experience</p>
+                    <h2>What I've done</h2>
+                </div>
+                <div class="timeline" id="experience-list"></div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section__header">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's talk</h2>
+                </div>
+                <p>
+                    If you would like to get in touch, please reach out via email at
+                    <a href="mailto:gopi.kotapati21@gmail.com">gopi.kotapati21@gmail.com</a>.
+                </p>
+                <div class="pill-list">
+                    <a class="pill" href="https://github.com/krishna0421" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="pill" href="https://www.linkedin.com/in/gopikrishna-kotapati" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; 2025 Krishna Kotapati.</p>
+            </footer>
+        </main>
     </div>
 </body>
-
 </html>
