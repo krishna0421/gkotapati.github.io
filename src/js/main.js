@@ -100,6 +100,14 @@ const renderExperience = () => {
         .join('');
 };
 
+function loadSection(section, file) {
+  fetch(file)
+    .then(res => res.text())
+    .then(html => {
+      document.querySelector('main.content').innerHTML = html;
+    });
+};
+
 const setupNav = () => {
     const links = Array.from(document.querySelectorAll('.nav__link'));
     if (!links.length) return;
