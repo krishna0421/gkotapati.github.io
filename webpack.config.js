@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -19,6 +20,14 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'styles.css',
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+            { from: 'src/about.html', to: 'about.html' },
+            { from: 'src/projects.html', to: 'projects.html' },
+            { from: 'src/experience.html', to: 'experience.html' },
+            { from: 'src/contact.html', to: 'contact.html' }
+        ]
+    })
     ],
     module: {
         rules: [
