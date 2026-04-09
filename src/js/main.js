@@ -146,5 +146,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSkills();
     renderExperience();
     setupNav();
-    loadSection('about', 'about.html');
+    // loadSection('home', 'home.html');
 });
