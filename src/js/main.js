@@ -107,9 +107,14 @@ const setupNav = () => {
     links.forEach((link) => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const file = link.getAttribute('data-file');
+            if (file) {
+                loadSection(link.getAttribute('href').substring(1), file);
+            } else {
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         });
     });
@@ -133,4 +138,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSkills();
     renderExperience();
     setupNav();
+    loadSection('about', 'about.html');
 });
